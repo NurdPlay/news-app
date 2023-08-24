@@ -1,4 +1,5 @@
-const apiKey = "76ad22813750424982d236f571e7a21a";
+import 'dotenv/config'
+const apiKey = process.env.NEWS_API_KEY;
 let currentCategory = 'technology'; // Default category
 let url = `https://newsapi.org/v2/everything?apiKey=${apiKey}&q=${currentCategory}`;
 
