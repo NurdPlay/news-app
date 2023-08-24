@@ -3,10 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple News App</title>
+    <title>Filtered News App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Top Headlines</h1>
+    <h1>News</h1>
+    <div id="category-selector">
+        <label for="category">Select a category:</label>
+        <select id="category" name="category">
+            <option value="technology">Technology</option>
+            <option value="sports">Sports</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="politics">Politics</option>
+            <option value="top-stories">Top Stories</option>
+            <option value="science">Science</option>
+            <option value="health">Health</option>
+        </select>
+        <button id="filter-btn">Filter</button>
+    </div>
     <div id="news"></div>
     <script src="scripts.js"></script>
 </body>
